@@ -304,26 +304,364 @@ def act22():
 
         list()
 
+    def cc1():
+        print ("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t* \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t      * * * \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    * * * * * \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t  * * * * * * * \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    * * * * * \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t      * * *  \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t*")
+
+    def cc2():
+        name= input("What is your name?")
+        print ("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t* \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t      * * * \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    * * * * * \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t  *"+ " Hi," + name + " * \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t    * * * * * \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t      * * *  \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t*")
+
+    def cc3():
+        fullname = "Fender B. Cruz"
+        birthplace = "Lucena City"
+        address = "Purok Maligaya Gulang Gulang Lucena City"
+        birthmonth = "August"
+        birthdate = 16
+        birthyear = 2006
+        gender = "Male"
+        nationality = "Filipino"
+        strand = "STE and STEM"
+        oldschool = "Gulang Gulang National High School"
+        grade = 94.688
+        school = "Dalubhasaan ng Lungsod ng Lucena" 
+        year = "First Year"
+        course = "Bachelor of Science in Information Technology"
+        email = "felixcruz8166@gmail.com"
+        contactnumber = 639512446514
+        single = True
+        religion = "Catholic"
+        hobbies = "art, like sketching, designing and fashion"
+
+
+
+        print (fullname , "was born in" , birthplace , "and currently resides in" , address , "\nBorn" , birthmonth , birthdate , birthyear,". A" , gender , nationality , "student that took" , strand , "and graduated at" , oldschool , "with an average of" , grade , "with high honors \nNow a" , year , "student at" , school , "taking" , course,". For inquiries, his email is" , email , "and contact number is" , contactnumber , "\nIt is" , single , "that his marital status is single and he is" , religion , "\nMost of his interest revolves around" , hobbies  ) 
+
+    def cc4():
+        print("The quotient of" , number1 , "and" , number2 , " is" , answer4) 
+
+        print(number1 , "exponent by" , number2 , "is" , answer5)
+
+        print("The remainder of" , number1 , "and" , number2 , "is" , answer6)
+
+        print("The floor division of" , number1 , " and " , number2 , " is" , answer7)
+
+    def cc5():
+        print("Fahrenheit to Celsius Converter Program")
+
+        fahrenheit = eval(input("Enter temperature in Fahrenheit --> : "))
+
+        celsius = ((fahrenheit - 32) * 5) / 9
+
+        print(f"{fahrenheit} degrees Fahrenheit converted to Celsius is {round(celsius, 2)} degrees")
+
+    def cc6():
+        x = 2
+
+        print(x)
+
+        x += 4
+
+        print(x)
+
+        x += 6 
+
+        print(x)
+
+        x += 8 
+
+        print(x)
+
+        x += 10
+
+        print(x)
+
+    def cc7():
+        bought = input("Would you like to shop in our grocery? (Yes/No) : ")
+
+        if bought.lower() == "yes":
+            item = input("Welcome! \nItems:\nchicken - 120.00 \nfish - 100.00 \npork - 130.00 \nChoose what you would like to buy : ")
+            price = eval(input("Input the price of your chosen item : "))
+            age = eval(input("Input your age: "))
+            pay = eval(input("Input your payment: "))
+            discount = round((price * 0.052), 2)
+            discprice = round((price - discount), 2)
+            tax = round((price * 0.123), 2)
+            taxprice = round((price + tax), 2)
+            if age >= 60: 
+                print(f"Hi Customer, you have purchased a {item} with a price of {price} plus a 12.3% tax (30.75PHP), a total of {round((price - discount), 2)} ")
+                print(f"Your change is {round((pay - discprice), 2)}")
+                print("Thank you for shopping at our grocery!")
+            elif age <60:
+                print(f"Hi Customer, you have purchased a {item} with a price of {price} plus a 12.3% tax (30.75PHP), a total of {round((price + tax), 2)} ")
+                print(f"Your change is {round((pay - taxprice), 2)}")
+                print("Thank you for shopping at our grocery!")
+        else:
+            print("Thank you! Come again.")
+
+    def cc8():
+        sum = 0
+
+        for x in range (1,11):
+            num= eval(input(f"Enter a number: "))
+            sum += num
+
+        print(f"The sum of all the numbers entered is {sum}")
+
+    def cc9():
+        for x in range(10, 0, -1):
+            print("  " * (10 - x) + " *" * x)
+
+    def cc10():
+        for x in range(1,6):
+            for y in range(6, x, -1): 
+                print(" ", end = " ")
+
+            for z in range(1, x+1): 
+                print("*", end =" ")
+
+            for a in range(1, x+1): 
+                print("*", end =" ")
+            print()
+
+        for x in range(1,6):
+            for y in range(1, x + 1): 
+                print(" ", end = " ")
+
+            for z in range(6, x, -1): 
+                print("*", end =" ")
+
+            for a in range(6, x, -1):
+                print("*", end =" ")
+            print()
+
+    def cc11():
+        for q in range(1, 6):
+            for w in range(6, q, -1): 
+                print(" ", end = " ")
+
+            for e in range(1, q+1): 
+                print("*", end = " ")
+
+            for e in range(1, q): 
+                print("*", end = " ")
+            print()
+
+        for q in range(1, 5): 
+            for w in range(1, q + 2): 
+                print(" ", end = " ")
+
+            for e in range(5, q, -1): 
+                print("*", end = " ")
+
+            for e in range(4, q, -1): 
+                print("*", end = " ")
+            print()
+
+    def cc12():
+        for q in range(1, 6): 
+            for w in range(6, q, -1): 
+                print(" ", end = " ")
+
+            for e in range(1, q+1): 
+                print("*", end = " ")
+            
+            for e in range(1, q): 
+                print("*", end = " ")
+
+            print()
+
+        for q in range(1, 6): 
+            for w in range(1, 5): 
+                print(" ", end = " ")
+
+            for w in range(1, 4): 
+                print("*", end = " ")
+
+            print()
+
+    def cc13():
+        for l in range(1,7):
+            for o in range(6, l, -1):
+                print(" ", end = " ")
+            for o in range(l, 1, -1):
+                print(o, end=" ")
+            for v in range(1, l+1):
+                print(v, end =" ")
+            print()
+
+        for l in range(5,0,-1):
+            for o in range(6, l, -1):
+                print(" ", end = " ")
+            for o in range(l,1,-1):
+                print(o, end=" ")
+            for v in range(1,l+1):
+                print(v, end =" ")
+            print()
+
+    def cc14():
+        c = True
+        count = 0
+        total_sum = 0
+
+        while c:
+            user_input = input("Please enter a number (or type 'stop' to end) -> ")
+
+            if user_input.lower() == "stop":
+                print("Loop has been terminated.")
+                print(f"The sum of all the given numbers is {total_sum}")
+                break
+            else:
+                try:
+                    number = float(user_input)  
+                    total_sum += number  
+                    count += 1  
+                except ValueError:
+                    print("Invalid input. Please enter a valid number or 'stop'.")
+
+    def cc15():
+        import os
+
+        c = True
+        no = 0
+
+        while c:
+            ask = input("Do you wish to create a new triangle (yes or no) --> ")
+
+            if ask.lower() == "no":
+                print("Program/loop terminated")
+                break
+            elif ask.lower() == "yes":
+                os.system("cls")
+                no += 1
+                for x in range(1, 6):
+                    for r in range(1, no + 1):
+                        for y in range(1, x + 1):
+                            print("^", end=" ")
+                        for z in range(6, x, -1):
+                            print(" ", end=" ")
+                    print()
+            else:
+                os.system("cls")
+                print("Invalid answer, please only answer 'yes' or 'no'")
+
+    def cc16():
+        class BankAccount:
+            def __init__(self, name, initial_deposit):
+                self.name = name
+                self.balance = initial_deposit
+
+            def deposit(self, amount):
+                if amount > 0:
+                    self.balance += amount
+                    print(f"Successfully deposited {amount}.")
+                    self.show_balance()
+                    self.breakdown_denomination(amount)
+                else:
+                    print("Deposit amount must be positive.")
+
+            def withdraw(self, amount):
+                if amount > 0:
+                    if self.balance >= amount:
+                        self.balance -= amount
+                        print(f"Successfully withdrew {amount}.")
+                        self.show_balance()
+                        self.breakdown_denomination(amount)
+                    else:
+                        print("Insufficient balance.")
+                else:
+                    print("Withdrawal amount must be positive.")
+
+            def show_balance(self):
+                print(f"Current balance: {self.balance}")
+
+            def breakdown_denomination(self, amount):
+                print(f"Breakdown of {amount}:")
+                denominations = [1000, 500, 200, 100, 50, 20, 10, 5, 1]
+                for denom in denominations:
+                    count = amount // denom
+                    if count > 0:
+                        print(f"{denom} = {count}")
+                    amount %= denom
+
+
+        def main():
+            print("Welcome to the Bank System!")
+            accounts = {}
+
+            while True:
+                print("\nMenu:")
+                print("1. Create Account")
+                print("2. Deposit")
+                print("3. Withdraw")
+                print("4. Show Balance")
+                print("5. Exit")
+
+                choice = input("Enter the number of your choice: ")
+
+                if choice == "1":
+                    name = input("Enter your name: ")
+                    initial_deposit = float(input("Enter initial deposit: "))
+                    if name in accounts:
+                        print("Account already exists.")
+                    else:
+                        accounts[name] = BankAccount(name, initial_deposit)
+                        print(f"Account created for {name} with initial deposit of {initial_deposit}.")
+
+                elif choice == "2":
+                    name = input("Enter account name: ")
+                    if name in accounts:
+                        amount = float(input("Enter amount to deposit: "))
+                        accounts[name].deposit(amount)
+                    else:
+                        print("Account not found.")
+
+                elif choice == "3":
+                    name = input("Enter account name: ")
+                    if name in accounts:
+                        amount = float(input("Enter amount to withdraw: "))
+                        accounts[name].withdraw(amount)
+                    else:
+                        print("Account not found.")
+
+                elif choice == "4":
+                    name = input("Enter account name: ")
+                    if name in accounts:
+                        accounts[name].show_balance()
+                    else:
+                        print("Account not found.")
+
+                elif choice == "5":
+                    print("Thank you for using the Bank System!")
+                    break
+
+                else:
+                    print("Invalid choice. Please try again.")
+
+
+        if __name__ == "__main__":
+            main()
+
         try:
             compile = True
 
             while compile:
 
                   print("\n\tSELECT FROM THE FOLLOWING PROGRAMS BELOW \n\t"
-                        "\n\tActivity 1 - [1]", "\tActivity 9 - [9]", "\tActivity 17 - [17]"
-                        "\n\tActivity 2 - [2]", "\tActivity 10 - [10]", "\tActivity 18 - [18]"
-                        "\n\tActivity 3 - [3]", "\tActivity 11 - [11]", "\tActivity 20 - [20]"
-                        "\n\tActivity 4 - [4]", "\tActivity 12 - [12]", "\tActivity 21 - [21]"
-                        "\n\tActivity 5 - [5]", "\tActivity 13 - [13]", "\tActivity 23 - [23]"
-                        "\n\tActivity 6 - [6]", "\tActivity 14 - [14]", "\tActivity 24 - [24]"
-                        "\n\tActivity 7 - [7]", "\tActivity 15 - [15]", "\tActivity 25 - [25]"
-                        "\n\tActivity 8 - [8]", "\tActivity 16 - [16]", "\tExit - [0]")
+                        "\n\tActivity 1 - [1]", "\tActivity 9 - [9]", "\tActivity 17 - [17]", "\tCode Cha. 2 - [27]", "\tCode Cha. 10 - [35]"
+                        "\n\tActivity 2 - [2]", "\tActivity 10 - [10]", "\tActivity 18 - [18]", "\tCode Cha. 3 - [28]", "\tCode Cha. 11 - [36]"
+                        "\n\tActivity 3 - [3]", "\tActivity 11 - [11]", "\tActivity 20 - [20]", "\tCode Cha. 4 - [29]", "\tCode Cha. 12 - [37]"
+                        "\n\tActivity 4 - [4]", "\tActivity 12 - [12]", "\tActivity 21 - [21]", "\tCode Cha. 5 - [30]", "\tCode Cha. 13 - [38]"
+                        "\n\tActivity 5 - [5]", "\tActivity 13 - [13]", "\tActivity 23 - [23]", "\tCode Cha. 6 - [31]", "\tCode Cha. 14 - [39]"
+                        "\n\tActivity 6 - [6]", "\tActivity 14 - [14]", "\tActivity 24 - [24]", "\tCode Cha. 7 - [32]", "\tCode Cha. 15 - [40]"
+                        "\n\tActivity 7 - [7]", "\tActivity 15 - [15]", "\tActivity 25 - [25]", "\tCode Cha. 8 - [33]", "\tCode Cha. 16 - [41]"
+                        "\n\tActivity 8 - [8]", "\tActivity 16 - [16]", "\tCode Cha. 1 - [26]", "\tCode Cha. 9 - [34]", "\tExit - [0]")
 
                   num = int(input("\n\n\tSelect a Program: "))
 
                   if num == 1:
                         act1()
                         continue
+                  
                   elif num == 2:
                         act2()
                         continue
@@ -416,6 +754,70 @@ def act22():
                         act25()
                         continue
                   
+                  elif num == 26:
+                        cc1()
+                        continue
+                  
+                  elif num == 27:
+                        cc2()
+                        continue
+                  
+                  elif num == 28:
+                        cc3()
+                        continue
+                  
+                  elif num == 29:
+                        cc4()
+                        continue
+                  
+                  elif num == 30:
+                        cc5()
+                        continue
+                  
+                  elif num == 31:
+                        cc6()
+                        continue
+                  
+                  elif num == 32:
+                        cc7()
+                        continue
+                  
+                  elif num == 33:
+                        cc8()
+                        continue
+                  
+                  elif num == 34:
+                        cc9()
+                        continue
+                  
+                  elif num == 35:
+                        cc10()
+                        continue
+                  
+                  elif num == 36:
+                        cc11()
+                        continue
+                  
+                  elif num == 37:
+                        cc12()
+                        continue
+                  
+                  elif num == 38:
+                        cc13()
+                        continue
+                  
+                  elif num == 39:
+                        cc14()
+                        continue
+                  
+                  elif num == 40:
+                        cc15()
+                        continue
+                  
+                  elif num == 41:
+                        cc16()
+                        continue
+                  
                   elif num == 0:
                         cont = input("Do you want to continue? [Yes] / [No]: ").upper().strip()
 
@@ -429,18 +831,18 @@ def act22():
                               continue
 
                         else:
-                              print("Wrong Input. Invalid Answer")
+                              print("Wrong input, Invalid answer")
 
 
                   elif num < 0:
-                        print("Wrong Input. Must Be A Positive Number.")
+                        print("Wrong input, Must be a positive number.")
                         continue
 
                   else:
-                        print("Wrong Input. Invalid Answer")
+                        print("Wrong input, Invalid answer")
                         continue
 
         except ValueError:
-            print("Wrong Input. Must Be A Number.")
+            print("Wrong input, Must be a number.")
       
 act22()
